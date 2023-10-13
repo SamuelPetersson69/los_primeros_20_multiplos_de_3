@@ -12,7 +12,7 @@ int main() {
     for (int i = 1; i <= numero; ++i) {
         suma += i;
     }
- // aqui simplemente te imprime la respuesta
+     // aqui simplemente te imprime la respuesta
     printf("La suma de Gauss hasta %d es: %d\n", numero, suma);
 
 
