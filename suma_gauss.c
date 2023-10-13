@@ -1,11 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    int num, sum = 0;
+    int numero, suma = 0;
 
-    // con esto solicito un numero entero.
+    // Solicita un numero entero para evitar decimales etc 
     printf("Ingrese un número entero: ");
     scanf("%d", &numero);
 
+    // esto calcula el resultado
+    for (int i = 1; i <= numero; ++i) {
+        suma += i;
+    }
+
+
+    return 0;
 }
+
 
