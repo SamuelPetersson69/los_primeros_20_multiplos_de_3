@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Función para ver si es numero primo
 bool esPrimo(int num) {
     if (num <= 1) {
         return false;
@@ -13,3 +12,23 @@ bool esPrimo(int num) {
     }
     return true;
 }
+
+int main() {
+    int numero, sumaPrimos = 0, cantidadPrimos = 0;
+
+    //toca  solicitar al usuario que ingrese números hasta que se ingrese 0 aqui ya entendi la pregunta
+    printf("Ingrese numeros (0 para terminar):\n");
+
+    do {
+        printf("Numero: ");
+        scanf("%d", &numero);
+
+        if (numero != 0) {
+            // Verificar si el número es primo
+            if (esPrimo(numero)) {
+                sumaPrimos += numero;
+                cantidadPrimos++;
+            }
+        }
+    } while (numero != 0);
+
